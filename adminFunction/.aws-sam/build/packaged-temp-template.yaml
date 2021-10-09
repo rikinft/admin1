@@ -1,0 +1,9 @@
+Resources:
+  Function:
+    Type: AWS::Serverless::Function
+    Properties:
+      Timeout: 300
+      MemorySize: 128
+      Handler: com.fintuple.admin.functions.taskManagement.GetMyPendingTasksListFunction
+      CodeUri: s3://devkotak/592fd5ef9931bbee654c6c00fe00134e
+      Runtime: java8.al2
